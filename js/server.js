@@ -5,12 +5,12 @@ const fs = require("fs");
 
 // Sets up the Express App
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // Create a listen function
-app.listen(port, function() {
-    console.log(`App is listening at ${port}`);
+app.listen(PORT, function() {
+    console.log(`App is listening at ${PORT}`);
 })
 
 // Basic route that sends the user to the index page
